@@ -1,0 +1,230 @@
+{
+  "name": "2D PE array",
+  "bitWidth": 16,
+  "peSize": 8,
+  "memory": {
+    "useCACTI": false,
+    "CACTI": {
+      "path": "/home/semiwaker/cacti",
+      "cfgTemplate": "/home/semiwaker/rubick/cache.cfg.template",
+      "cfgInputFile": "/home/semiwaker/rubick/cache.cfg",
+      "areaUnit": 100000,
+      "powerUnit": 1000
+    },
+    "areaPerBit": 1.64794921875,
+    "powerPerBit": 0.000049957275390625
+  },
+  "pipelined": false,
+  "entries": [
+    {
+      "name": "X-systolic",
+      "needT1": true,
+      "needTransfer": true,
+      "needLoadStore": false,
+      "bandDims": 1,
+      "area": {
+        "in": 9937,
+        "out": 46872
+      },
+      "power": {
+        "in": 306,
+        "out": 357
+      }
+    },
+    {
+      "name": "Y-systolic",
+      "needT1": true,
+      "needTransfer": true,
+      "needLoadStore": false,
+      "bandDims": 1,
+      "area": {
+        "in": 9937,
+        "out": 46872
+      },
+      "power": {
+        "in": 306,
+        "out": 357
+      }
+    },
+    {
+      "name": "Diag-systolic",
+      "needT1": true,
+      "needTransfer": true,
+      "needLoadStore": false,
+      "bandDims": 1,
+      "area": {
+        "in": 9937,
+        "out": 46872
+      },
+      "power": {
+        "in": 306,
+        "out": 357
+      }
+    },
+    {
+      "name": "Stationary",
+      "needT1": false,
+      "needTransfer": false,
+      "needLoadStore": true,
+      "bandDims": 1,
+      "area": {
+        "in": 9937,
+        "out": 33521
+      },
+      "power": {
+        "in": 306,
+        "out": 358
+      }
+    },
+    {
+      "name": "X-multicast",
+      "needT1": true,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 2058,
+        "out": 29827
+      },
+      "power": {
+        "in": 367,
+        "out": 403
+      }
+    },
+    {
+      "name": "Y-multicast",
+      "needT1": true,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 2058,
+        "out": 29827
+      },
+      "power": {
+        "in": 367,
+        "out": 403
+      }
+    },
+    {
+      "name": "Diag-multicast",
+      "needT1": true,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 2058,
+        "out": 29827
+      },
+      "power": {
+        "in": 367,
+        "out": 403
+      }
+    },
+    {
+      "name": "XY-multicast",
+      "needT1": true,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 577,
+        "out": 31434
+      },
+      "power": {
+        "in": 145,
+        "out": 397
+      }
+    },
+    {
+      "name": "X-systolic-Y-multicast",
+      "needT1": true,
+      "needTransfer": true,
+      "needLoadStore": false,
+      "bandDims": 1,
+      "area": {
+        "in": 1665,
+        "out": 31509
+      },
+      "power": {
+        "in": 300,
+        "out": 401
+      }
+    },
+    {
+      "name": "Y-systolic-X-multicast",
+      "needT1": true,
+      "needTransfer": true,
+      "needLoadStore": false,
+      "bandDims": 1,
+      "area": {
+        "in": 1665,
+        "out": 31509
+      },
+      "power": {
+        "in": 300,
+        "out": 401
+      }
+    },
+    {
+      "name": "X-multicast-stationary",
+      "needT1": false,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 1665,
+        "out": 31393
+      },
+      "power": {
+        "in": 300,
+        "out": 344
+      }
+    },
+    {
+      "name": "Y-multicast-stationary",
+      "needT1": false,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 1665,
+        "out": 31393
+      },
+      "power": {
+        "in": 300,
+        "out": 344
+      }
+    },
+    {
+      "name": "Diag-multicast-stationary",
+      "needT1": false,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 1665,
+        "out": 31393
+      },
+      "power": {
+        "in": 300,
+        "out": 344
+      }
+    },
+    {
+      "name": "XY-multicast-stationary",
+      "needT1": false,
+      "needTransfer": false,
+      "needLoadStore": false,
+      "bandDims": 2,
+      "area": {
+        "in": 577,
+        "out": 31434
+      },
+      "power": {
+        "in": 145,
+        "out": 397
+      }
+    }
+  ]
+}

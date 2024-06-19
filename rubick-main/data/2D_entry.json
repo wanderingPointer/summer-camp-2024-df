@@ -1,0 +1,284 @@
+{
+  "name": "2D PE array",
+  "spaceDims": 2,
+  "spaceNames": [
+    "x",
+    "y"
+  ],
+  "spaceRange": [7,8,9,10,11,12,13,14,15,16],
+  "dirVecs": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "entries": [
+    {
+      "name": "X-systolic",
+      "relation": "D[x,y,t1]->E[0,y,t1-x]",
+      "vecs": [
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Y-systolic",
+      "relation": "D[x,y,t1]->E[x,0,t1-y]",
+      "vecs": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Diag-systolic",
+      "relation": "D[x,y,t1]->E[x-y,0,t1-x]",
+      "vecs": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "hasDiag": true,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Stationary",
+      "relation": "D[x,y,t1]->E[x,y,0]",
+      "vecs": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "X-multicast",
+      "relation": "D[x,y,t1]->E[0,y,t1]",
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Y-multicast",
+      "relation": "D[x,y,t1]->E[x,0,t1]",
+      "vecs": [
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Diag-multicast",
+      "relation": "D[x,y,t1]->E[x-y,0,t1]",
+      "vecs": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "hasDiag": true,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "XY-multicast",
+      "relation": "D[x,y,t1]->E[0,0,t1]",
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "X-systolic-Y-multicast",
+      "relation": "D[x,y,t1]->E[0,0,t1-x]",
+      "vecs": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Y-systolic-X-multicast",
+      "relation": "D[x,y,t1]->E[0,0,t1-y]",
+      "vecs": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "X-multicast-stationary",
+      "relation": "D[x,y,t1]->E[0,y,0]",
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Y-multicast-stationary",
+      "relation": "D[x,y,t1]->E[x,0,0]",
+      "vecs": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "Diag-multicast-stationary",
+      "relation": "D[x,y,t1]->E[x-y,0,0]",
+      "vecs": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "hasDiag": true,
+      "input": true,
+      "output": true
+    },
+    {
+      "name": "XY-multicast-stationary",
+      "relation": "D[x,y,t1]->E[0,0,0]",
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "hasDiag": false,
+      "input": true,
+      "output": true
+    }
+  ]
+}

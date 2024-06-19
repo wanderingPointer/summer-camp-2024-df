@@ -1,0 +1,470 @@
+{
+  "name": "2D PE array",
+  "spaceDims": 2,
+  "spaceNames": [
+    "x",
+    "y"
+  ],
+  "spaceRanges": [
+    8,
+    8
+  ],
+  "dirVecs": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "entries": [
+    {
+      "name": "X-systolic",
+      "mat": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          -1,
+          0,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 1,
+      "layoutIndices": [
+        "0",
+        "y",
+        "t1"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "Y-systolic",
+      "mat": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 1,
+      "layoutIndices": [
+        "x",
+        "0",
+        "t1"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "Diag-systolic",
+      "mat": [
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 1,
+      "layoutIndices": [
+        "x",
+        "0",
+        "t1"
+      ],
+      "hasDiag": true
+    },
+    {
+      "name": "Stationary",
+      "mat": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "vecs": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "spaceDims": 2,
+      "timeDims": 0,
+      "layoutIndices": [
+        "x",
+        "y",
+        "0"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "X-multicast",
+      "mat": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 1,
+      "layoutIndices": [
+        "0",
+        "y",
+        "t1"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "Y-multicast",
+      "mat": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 1,
+      "layoutIndices": [
+        "x",
+        "0",
+        "t1"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "Diag-multicast",
+      "mat": [
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 1,
+      "layoutIndices": [
+        "x",
+        "0",
+        "t1"
+      ],
+      "hasDiag": true
+    },
+    {
+      "name": "XY-multicast",
+      "mat": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "spaceDims": 0,
+      "timeDims": 1,
+      "layoutIndices": [
+        "0",
+        "0",
+        "t1"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "X-systolic-Y-multicast",
+      "mat": [
+        [
+          -1,
+          0,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "spaceDims": 0,
+      "timeDims": 1,
+      "layoutIndices": [
+        "0",
+        "0",
+        "t1"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "Y-systolic-X-multicast",
+      "mat": [
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "vecs": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "spaceDims": 0,
+      "timeDims": 1,
+      "layoutIndices": [
+        "0",
+        "0",
+        "t1"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "X-multicast-stationary",
+      "mat": [
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 0,
+      "layoutIndices": [
+        "0",
+        "y",
+        "0"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "Y-multicast-stationary",
+      "mat": [
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "vecs": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 0,
+      "layoutIndices": [
+        "x",
+        "0",
+        "0"
+      ],
+      "hasDiag": false
+    },
+    {
+      "name": "Diag-multicast-stationary",
+      "mat": [
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "vecs": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "spaceDims": 1,
+      "timeDims": 0,
+      "layoutIndices": [
+        "x",
+        "0",
+        "0"
+      ],
+      "hasDiag": true
+    },
+    {
+      "name": "XY-multicast-stationary",
+      "mat": [],
+      "vecs": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "spaceDims": 0,
+      "timeDims": 0,
+      "layoutIndices": [
+        "0",
+        "0",
+        "0"
+      ],
+      "hasDiag": false
+    }
+  ]
+}
