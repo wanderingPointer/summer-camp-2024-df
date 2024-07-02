@@ -92,3 +92,7 @@ TENET以relation-centric的方式建模数据流并进行评估，不过缺乏�
 2. 设计一个自动剪枝程序，对2D的access entry类型进行剪枝，可以不考虑对称线性空间和硬件实现合理性（2D access entry此时剪枝后的结果应为17种）。由于2D和3D的access entry类型剪枝策略一致，剪枝程序需能对3D的access entry类型进行剪枝。请阐述程序设计思路。
 3. （选做）简要分析Rubick代码中数据流设计空间探索的步骤，以及当中涉及的优化算法。
 
+### 环境配置注意
+
+1. 运行TENET若出现缺少库文件的问题，可按照https://blog.51cto.com/u_15127691/4347156链接的方法将external/lib中的库添加到库搜索路径中。
+2. Rubick的运行环境与TENET基本一致，运行时若出现找不到module问题，请将src目录导入到Python的module搜索路径中。

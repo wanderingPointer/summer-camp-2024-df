@@ -122,11 +122,11 @@ def makeDWCONV():
 
 
 if __name__ == "__main__":
-    arraySpec = ArraySpec("data/3D_entry.json")
+    arraySpec = ArraySpec("data/2D_entry.json")
 
     t0 = time()
-    ops = [makeCONV()]
+    ops = [makeGEMM()]
     perfModel = PerfModel(arraySpec)
-    perfModel(ops, 7, 65536, 2.56, False, "cube_conv.json")
+    perfModel(ops, 7, 65536, 2.56, False, "2D_GEMM.json")
 
     print(time() - t0)
